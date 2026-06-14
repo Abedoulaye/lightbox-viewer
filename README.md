@@ -1,10 +1,10 @@
-# [Project Name]
+# [Lightbox Image Gallery]
 
 A responsive image gallery with a JavaScript lightbox overlay.
 
 ## Demo
 
-![Screenshot of gallery]([path-to-screenshot])
+![https://abedoulaye.github.io/lightbox-viewer/]
 
 ## Features
 
