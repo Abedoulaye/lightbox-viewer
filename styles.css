@@ -1,4 +1,49 @@
-img {
-    width: 60%;
-    height: 40%;
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.gallery-item {
+    width: 40%;
+    height: 30%;
+    margin: 10px;
+}
+
+.lightbox {
+  position: fixed; /* so scrolling doesn't move it */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#lightbox-image{
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  object-fit: contain; /* resizes to fit into contianer without changing aspect ratio */
+}
+
+#close-btn{
+  position:absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px
 }
